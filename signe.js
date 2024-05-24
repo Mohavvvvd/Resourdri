@@ -3,7 +3,7 @@ document.getElementById('sig').addEventListener('submit', function(event) {
     const equation = document.getElementById('functionInput').value;
     const debut = parseFloat(document.getElementById('a').value);
     const fi = parseFloat(document.getElementById('b').value);
-    fetch('/signe', {
+    fetch('https://resourdri.onrender.com/signe', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
