@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault();
         const equation = document.getElementById('functionInput').value;
 
-        fetch('/solve', {
+        fetch('https://resourdri.onrender.com/solve', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
