@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Plotter</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resouredri</h1>
+        <h3>Votre application web pour resourdrer n'import quelle fonction</h3>     
+        <h3><a href="https://www.linkedin.com/in/mohamed-ghoul-224982287/"> Mohamed Ghoul </a>productions all copy right are reserved 2024 &copy;</h3>
+        <div class="d"> 
+            <input type="text" id="functionInput" placeholder="F(x) = ">
+            <summary>Les fonctions valable</summary>
+            <details>
+                'e^(x)',         // Exemple d'exponentielle <br>
+                'sqrt(x)',       // Exemple de racine carrée<br>
+                'sin(x)',        // Exemple de sinus<br>
+                'cos(x)',        // Exemple de cosinus<br>
+                'tan(x)'         // Exemple de tangente<br>
+                'log(x)'         // Exemple de logarithme np<br>
+                'log10(x)'       // Exemple de logarithme <br>
+                'x!'             // Exemple de factorielle<br>
+                '2*x'            // Exemple de 2x<br>
+                'x^(2)'          // Exemple de puissance<br>
+                // N'oubliez pas d'utiliser () pour éviter les erreurs.
+            </details><br>
+            <input type="number" id="a" placeholder="-∞" maxlength="4" >
+            <input type="number" id="b" placeholder="+∞" maxlength="4" >
+            </div>
+        <div class="b">
+        <button onclick="if(test()) { plotFunction();show(); }" class="but">Dessiner le graphe!</button>
+        
+        <form id="equationForm">
+            <button type="submit" class="but" onclick="if(test()) { return test();show();}">les solution</button>
+        </form>        
+        <form id="sig">
+            <button type="submit" class="but" onclick="if(test()) { return test();show();}">les signes</button>
+        </form>
+        </div>
+        <div class="res" id="res">
+        <div id = "solution"></div>
+        <div id="signe"></div>
+        <div id="plot"></div></div>
+    
+    </div>
+    <script src="control.js"></script>
+    <script src="script.js"></script>
+    <script src="solution.js"></script>
+    <script src="signe.js"></script>
+    
+
+</body>
+</html>

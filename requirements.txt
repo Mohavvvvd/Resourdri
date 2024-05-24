@@ -1,0 +1,4 @@
+Flask==3.0.3
+Flask_Cors==4.0.1
+sympy==1.12
+gunicorn==20.1.0
