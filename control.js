@@ -13,6 +13,14 @@
             alert("Saisie le début de l'intervalle!");
             return false;
         }
+        if(deb == fin ) {
+            alert("Le debut de l'intervalle doit être défirent de son fin ");
+            return false ;
+        }
+        if(deb > fin){
+            alert("Le debut de l'intervalle doit être inférieur de son fin");
+            return false ;
+        }
         if (!fin) {
             alert("Saisie la fin de l'intervalle!");
             return false;
